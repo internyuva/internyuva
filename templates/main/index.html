@@ -27,10 +27,10 @@
 	    <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-12 mb-4 text-center">
-                        <h1 class="title text-white">
+                        <h1 class="title text-black">
                             Course Categories
                         </h1>
-                        <p class="text-white">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
+                        <p class="text-black-50">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
                     </div>
                 </div>
 		        <div class="row no-gutters cat-row">
@@ -63,10 +63,10 @@
 	<div class="container-fluid">
 		<div class="row align-items-center">
 			<div class="col-lg-12 mb-4 text-center">
-				<h1 class="title text-white">
+				<h1 class="title text-black">
 					Web Development
 				</h1>
-				<p class="text-white">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
+				<p class="text-black-50">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
 			</div>
 		</div>
 		
@@ -247,7 +247,7 @@
 <section class="about-sec">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-7 text-left">
+            <div class="col-lg-7 text-left" style="color: black">
                 <div class="heading">
                     <h2 class="text-uppercase">
                         HOW WE DIFFER FROM OTHERS
@@ -276,14 +276,14 @@
                     </h2>                                
                     <span></span>
                     <div class="left-content">
-                        <p>
+                        <p style="color: black">
                             Traditional ways of education are like hammering square pegs into round holes. In other words, it is one format, one solution for all students who are following the same path forcefully.
                         </p>
-                        <p>
+                        <p style="color: black">
                             The mission of distance learning is to connect all those who have real knowledge. And those who want to acquire this knowledge. Anyone can learn anything - neither age nor location should be a hindrance. There are many resources on the Internet today that offer absorbing and necessary lectures. Every hunter for real knowledge can choose the right one for himself.
                         </p>
                             We combine all the resources related to education and make them available to every person on this planet. Distance learning has no barriers. There are no templates, prescribed paths, out-dated information, or unnecessary specialities. It is because the resource directly depends on the needs of the students. There are no graduates, as students study all their lives. Courses offer the opportunity to learn at your ease from the comfort of your home.
-                        <p>
+                        <p style="color: black">
                             
                         </p>
                     </div>
@@ -299,8 +299,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center mb-5">
-				<h1 class="title text-white">Frequently asked questions</h1>
-				<p class="text-white">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
+				<h1 class="title text-black">Frequently asked questions</h1>
+				<p class="text-black-50">Not just traditional analytics, but also uncover your blind spots and take smarter decisions</p>
 			</div>
 		</div>
 		<div id="contact-bg" class="row justify-content-center">
@@ -312,96 +312,19 @@
                             <!-- Card header -->
                             <div class="card-head" role="tab" id="headingOne{{ forloop.counter }}">
                               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne{{ forloop.counter }}" aria-expanded="false" aria-controls="collapseOne{{ forloop.counter }}" class="collapsed">
-                                <h6 class="mb-0"><i class="fal fa-minus-square"></i> {{ obj.question }}</h6>
+                                <h6 class="mb-0" style="color: black"><i class="fal fa-minus-square"></i> {{ obj.question }}</h6>
                               </a>
                             </div>
                             <!-- Card body -->
                             <div id="collapseOne{{ forloop.counter }}" class="collapse" role="tabpanel" aria-labelledby="headingOne{{ forloop.counter }}" data-parent="#accordionEx" style="">
-                              <div class="card-body">
+                              <div class="card-body" style="color: black">
                                 <p>{{ obj.answer }}.</p>
                               </div>
                             </div>
                         </div>
 
                     {% endfor %}
-                    {% comment %}
-					<!-- Item -->
-				  	<div class="card mb-3">
-						<!-- Card header -->
-					    <div class="card-head" role="tab" id="headingOne2">
-					      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2" class="collapsed">
-					        <h6 class="mb-0"><i class="fal fa-minus-square"></i> How do I contact my coach?</h6>
-					      </a>
-					    </div>
-						<!-- Card body -->
-					    <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionEx">
-					      <div class="card-body">
-					        <p>You may contact your coach through multiple means. The easiest way is through the Discussion Board on your profile. Junior Coaches and Mentors on the platform contact you on a regular basis to help you with project completion and the learning process. Also, you can get in touch with the Coach through Email, WhatsApp and calls subject to availability of the Coach.</p>
-					      </div>
-					    </div>
-					</div>
-					<!-- Item -->
-				  	<div class="card mb-3">
-						<!-- Card header -->
-					    <div class="card-head" role="tab" id="headingOne3">
-					      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3" class="collapsed">
-					        <h6 class="mb-0"><i class="fal fa-minus-square"></i>How long is the course duration?</h6>
-					      </a>
-					    </div>
-						<!-- Card body -->
-					    <div id="collapseOne3" class="collapse" role="tabpanel" aria-labelledby="headingOne3" data-parent="#accordionEx">
-					      <div class="card-body">
-					        <p>Courses at Unschool are self-paced. Take 2 weeks or 3 months – at Unschool, you are allowed to learn at your own pace and every course is designed to cater to your personal needs, which means you pay once and learn life-long.</p>
-					      </div>
-					    </div>
-					</div>
-					<!-- Item -->
-				  	<div class="card mb-3">
-						<!-- Card header -->
-					    <div class="card-head" role="tab" id="headingOne4">
-					      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne3" class="collapsed">
-					        <h6 class="mb-0"><i class="fal fa-minus-square"></i>How long is the course duration?</h6>
-					      </a>
-					    </div>
-						<!-- Card body -->
-					    <div id="collapseOne4" class="collapse" role="tabpanel" aria-labelledby="headingOne4" data-parent="#accordionEx">
-					      <div class="card-body">
-					        <p>Courses at Unschool are self-paced. Take 2 weeks or 3 months – at Unschool, you are allowed to learn at your own pace and every course is designed to cater to your personal needs, which means you pay once and learn life-long.</p>
-					      </div>
-					    </div>
-					</div>
-					<!-- Item -->
-				  	<div class="card mb-3">
-						<!-- Card header -->
-					    <div class="card-head" role="tab" id="headingOne5">
-					      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5" class="collapsed">
-					        <h6 class="mb-0"><i class="fal fa-minus-square"></i>How long is the course duration?</h6>
-					      </a>
-					    </div>
-						<!-- Card body -->
-					    <div id="collapseOne5" class="collapse" role="tabpanel" aria-labelledby="headingOne5" data-parent="#accordionEx">
-					      <div class="card-body">
-					        <p>Courses at Unschool are self-paced. Take 2 weeks or 3 months – at Unschool, you are allowed to learn at your own pace and every course is designed to cater to your personal needs, which means you pay once and learn life-long.</p>
-					      </div>
-					    </div>
-					</div>
-					<!-- Item -->
-				  	<div class="card mb-3">
-						<!-- Card header -->
-					    <div class="card-head" role="tab" id="headingOne3">
-					      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne6" aria-expanded="false" aria-controls="collapseOne6" class="collapsed">
-					        <h6 class="mb-0"><i class="fal fa-minus-square"></i>How long is the course duration?</h6>
-					      </a>
-					    </div>
-						<!-- Card body -->
-					    <div id="collapseOne6" class="collapse" role="tabpanel" aria-labelledby="headingOne6" data-parent="#accordionEx">
-					      <div class="card-body">
-					        <p>Courses at Unschool are self-paced. Take 2 weeks or 3 months – at Unschool, you are allowed to learn at your own pace and every course is designed to cater to your personal needs, which means you pay once and learn life-long.</p>
-					      </div>
-					    </div>
-					</div>
-					{% endcomment %}
-				</div>
+                  </div>
 			</div>
 		</div>
 	</div>
