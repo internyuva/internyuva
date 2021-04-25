@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from classroom.models import Category
 from .models import Post, PostAuthor, Tag, Image
-from.forms import CreatePostForm,UpdatePostForm
+from.forms import CreatePostForm,UpdatePostForm,CreateInternshipForm
 # Create your views here.
 
 def blog_home(request):
@@ -26,7 +26,7 @@ def post_Details(request,id):
 @login_required
 def createPost(request):
     user=request.user
-    # author_=PostAuthor.objects.get(user=user)
+    author_=PostAuthor.objects.get(user=user)
     form=CreatePostForm()
     if request.method=="POST":
         form=CreatePostForm(request.POST or None,request.FILES or None)
@@ -75,5 +75,23 @@ def delete_post(request,id):
     post.delete()
     # messages.success(request, f"{post.title} is successfully deleted ")
     return redirect('blogs')
+
+
+@login_required
+def add_internShip(request):
+    user = request.user
+    author_=PostAuthor.objects.get(user=user)
+    form = CreateInternshipForm()
+    if request.method == "POST":
+        form = CreateInternshipForm(request.POST or None, request.FILES or None)
+        if form.is_valid():
+            new_internship = form.save(commit=False)
+            new_internship.author = author_
+            new_internship.save()
+            return redirect('internships-detail', new_internship.id)
+    context = {
+        'form': form
+    }
+    return render(request, 'blog/internship_create.html', context)
 
 

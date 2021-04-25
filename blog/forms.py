@@ -1,6 +1,6 @@
 from django import forms
 from .models import Post,Image
-
+from classroom.models import InternshipForm
 
 class CreatePostForm(forms.ModelForm):
     class Meta:
@@ -44,3 +44,15 @@ class ImageForm(forms.ModelForm):
     class Meta:
         model=Image
         fields=['image']
+
+class CreateInternshipForm(forms.ModelForm):
+    class Meta:
+        model=InternshipForm
+        fields=['name',
+                'company_name',
+                'role',
+                'url',
+                'start_date',
+                'end_date',
+                'desc',
+                'stipend','is_list']

@@ -15,6 +15,7 @@
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" href="{% url 'internships' %}">NATIONAL</a>
 				<a class="dropdown-item" href="#">INTER-NATIONAL</a>
+				<a class="dropdown-item" href="{% url 'add_internship' %}">ADD INTERNSHIP</a>
 			</div>
 		</div>
 		{# <a href="{% url 'about_us' %}">CONTACT US</a>#}
@@ -68,9 +69,10 @@
 			<div class="col-lg-12">
 				<nav class="navbar navbar-expand-lg p-0">
 					<a class="navbar-brand m-0 p-0" href="#">
-						 <img style="" src="{% static 'main/img/internyuvaLogo-black-Resized.jpg' %}" />
-{#						<img style="max-width: 100px; height: 100px" src="https://raw.githubusercontent.com/internyuva/internyuva/master/static/main/img/InternYuvaResized.png" />#}
+{#						 <img style="" src="{% static 'main/img/internyuvaLogo-black-Resized.jpg' %}" />#}
+						<img style="max-width: 100px; height: 100px" src="https://raw.githubusercontent.com/internyuva/internyuva/raw/master/static/main/img/internyuvaLogo-black-Resized.jpg" />
 					</a>
+{#                    https://raw.githubusercontent.com/internyuva/internyuva/raw/master/static/main/img/internyuvaLogo-black-Resized.jpg#}
 					<div class="mobile-menu-open d-block d-lg-none" onclick="openNav()">
 						<i><img src="{% static 'main/img/menu-icon.png' %}"></i>
 					</div>
@@ -100,6 +102,8 @@
 								<div class="dropdown-content">
 									<a href="{% url 'internships' %}">NATIONAL</a>
 									<a href="#">INTER-NATIONAL</a>
+                                    <a href="{% url 'add_internship' %}">ADD INTERNSHIP</a>
+
 								</div>
 							</div>
 							&nbsp;&nbsp;&nbsp;&nbsp;
@@ -124,6 +128,8 @@
 								{# <a href="#">Favourites</a>#}
 								{# <a class="nav-link theme-btn" href="{% url 'logout' %}"><span>Logout</span></a>#}
 								<a href="{% url 'update-profile' %}">Edit Profile</a>
+								<a href="{% url 'blog_create' %}">Create Blog Post</a>
+
 								<a style="color: red" href="{% url 'logout' %}"><span>Logout</span></a>
 							</div>
 					</div>

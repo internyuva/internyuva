@@ -245,12 +245,14 @@ class InternshipForm(models.Model):
 	name=models.CharField(max_length=200,default="The Python Developer")
 	company_name=models.CharField(max_length=200,default="InternYuva")
 	role = models.CharField(max_length=200,default="Django Developer")
+	author=models.ForeignKey(User,blank=True,null=True,on_delete=models.SET_NULL)
 	url= models.URLField(blank=True,null=True)
 	start_date = models.DateField(default=date.today(), blank=True, null=True, help_text="yyyy-mm-dd")
 	end_date = models.DateField(default=date.today() + datetime.timedelta(days=60), blank=True, null=True,help_text="yyyy-mm-dd")
 	desc = models.TextField(blank=True,null=True)
 	stipend = models.IntegerField(default=4000)
 	is_list  = models.BooleanField(default=True)
+	is_reviewed=models.BooleanField(default=False)
 
 	def __str__(self):
 		return str(self.name)
