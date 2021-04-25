@@ -259,7 +259,7 @@ section.banner {
     color: #ff7700;
 }
 section{
-    padding: 70px 0!important;
+    padding-bottom: 70px !important;
  }
 .solution-sec {
     position: relative;
@@ -351,14 +351,15 @@ section{
 }
 /*Course Section*/
 .course-img img {
-    height: 320px;
+    height: 515px;
     object-fit: cover;
     width: 100%;
+    max-height: 550px;
 }
 .course-desc {
     position: absolute;
     width: 100%;
-    bottom: 0; 
+    bottom: 0;
 }
 .fea-content {
     background: #2b2b2b;
@@ -602,9 +603,6 @@ textarea{
     transform: rotate(-90deg);
     margin-top: -14px;
 }
-.contact-icon {
-    margin-top: -60px;
-}
 .cta-box .cta-icon i {
     color: white;
     font-size: 22px;
@@ -676,12 +674,12 @@ footer ul li a {
     text-decoration: none!important;
 }
 footer ul li a:hover{
-    color: #ff7700; 
+    color: #ff7700;
 }
 .contact-info ul li {
     padding: 12px 0;
 }
-.contact-info ul li span{ 
+.contact-info ul li span{
     display: flex;
     align-items: baseline;
 }
@@ -718,7 +716,7 @@ h3.footer-links + ul li a:hover {
     background: #070809;
     padding: 10px 0;
 }
-.copyright-bottom a{ 
+.copyright-bottom a{
     color: #708238;
 }
 p.copyright {
@@ -920,4 +918,8 @@ input.form-control.email-sub {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .dropdown-content a:hover{
     color: orange;
+}
+
+.carousel-inner {
+    text-align: center !important;
 }
