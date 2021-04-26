@@ -168,8 +168,19 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '135176475177358'
 SOCIAL_AUTH_FACEBOOK_SECRET = '1fe00f57617b42c46f39e26a62c1096e'
 
+# <<<<<<< social_login
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '141138331763-544gre9d76dq5atlos07mj2oh0f1pscq.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '1FOwAdGmttT6DCs8qCEx-gim'
+# =======
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '516902878922-7ka5a33qtpfo0m2h181d2is8tnhmhb0v.apps.googleusercontent.com'
+
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'ar0vDZONKmc-PGX-CsdoXHKE'
+# >>>>>>> master
+
+
+# samir patil accounts
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '938048506814-h8umhm60uv438465v67450ds7hgoguke.apps.googleusercontent.com'
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'LLdmhLTx49Oa6-bTguuxEPRE'
 
 
 
